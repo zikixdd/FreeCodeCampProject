@@ -1,0 +1,271 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
+    background-color: #BE3243;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    font-size: 1.6rem;
+    z-index: 1;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    width: 40%;
+    height: 7vh;
+    list-style: none;
+}
+
+nav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width:20%;
+
+}
+nav a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;    
+    height: 100%;
+    transition: 0.2s;
+}
+
+nav a:hover{
+    background-color: #45567d;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  cursor: default;
+}
+header h1{
+font-family: "Raleway", sans-serif;
+font-size: 4rem;
+color: white;
+}
+
+header p{
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: "Poppins";
+    color: #be3144;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #45567D;
+    color: white;
+}
+
+main h2,
+.project,
+main button{
+    transform: scale(0);
+    transition: 0.4s;
+}
+
+
+main h2.active,
+.project.active,
+main button.active{
+transform: scale(1);
+}
+main h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+     margin: 50px auto;
+     padding:0.5rem 2.5rem;
+     border-bottom: 2px solid white;
+     cursor: default;
+}
+
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    width: 100%;
+    height: 100vh;
+    flex-grow: 1;
+    padding: 2vh 0;
+}
+
+.project{
+width: 43%;
+height: 25vh;
+border-radius: 2px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.project a{
+color: white;
+text-decoration: none;
+}
+
+.project a img{
+display: block;
+width: 100%;
+height:100%;
+background-color:gray;
+object-fit: cover;
+transition: 0.2s;
+}
+
+.project p{
+display: flex;
+justify-content: center;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+width: 100%;
+line-height: 6vh;
+font-size: 1.2rem;
+background-color: #303941;
+transition: 0.2s;
+}
+@media(min-width:1024px){
+    .project{
+        width: 27%;
+        height: 40vh;
+    }
+    }
+
+
+        
+
+            
+main button{
+    display:block;
+    color: white;
+    background-color: #303941;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    padding:10px  40px;
+    margin: 100px auto 40px;
+   transition: 0.2s;
+}
+
+main button:hover{
+    cursor: pointer;
+    background-color:#be3144;
+}
+
+.project a:hover p{
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.project a:hover img{
+    transform: scale(1.1);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vh;
+    background-color: #303941;
+    border-bottom: 2px solid red;
+}
+section h2.active,
+section p.active,
+.sociallink.active{
+transform: scale(1);
+}
+
+section h2,
+section p,
+.sociallink{
+    transform: scale(0);
+    transition: 0.4s;
+}
+
+
+section h2, 
+section p{
+color: white;
+text-align: center;
+cursor: default;
+}
+section h2{
+    font-size: 3.5rem;
+}
+section p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.sociallinks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+align-content: space-around;
+    width:100%;
+    justify-content: center;
+margin-top: 2rem;
+}
+
+.sociallink{
+    text-decoration: none;
+    color: white;
+    width: 27%;
+    font-size: 1.2rem;
+    padding: 2rem;
+    transition: 0.2s;
+}
+.sociallink:hover{
+    transform: translateY(20px)
+}
+
+.sociallink i{
+font-size:1.2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+    background-color: #303941;
+    text-align: center;
+}
+footer p{
+width: 50%;
+}
+
